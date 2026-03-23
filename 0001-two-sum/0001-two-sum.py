@@ -3,9 +3,8 @@ class Solution:
         n =len(nums)
         dict1 = {}
         for i in range(n):
-            reminder = target - nums[i]
-            if reminder in dict1:
-                return [dict1[reminder],i]
+            rem = target - nums[i]
+            if rem in dict1:
+                return [dict1[rem] , i]
             dict1[nums[i]]=i
-
-            
+        
